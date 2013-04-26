@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Informasi Kehadiran (SIKEH)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <style type="text/css"  media="screen">
+                        
+            .x-action-col-cell img.download-col {
+                height: 16px;
+                width: 20px;
+                cursor: pointer;
+                background: url('images/page_white_put.png') no-repeat center center;
+            }
+            .x-action-col-cell img.upload-col {
+                height: 16px;
+                width: 20px;
+                cursor: pointer;
+                background: url('images/page_white_get.png')no-repeat center center;
+            }
+            .x-action-col-cell img.restore-col {
+                height: 16px;
+                width: 20px;
+                cursor: pointer;
+                background: url('images/page_refresh.png') no-repeat center center;
+            }
+
+            .x-action-col-cell img {
+                height: 16px;
+                width: 16px;
+                cursor: pointer;
+            }
+            
+            #loading-mask{
+                background-color:white;
+                height:100%;
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                z-index:20000;
+            }
+            #loading{
+                height:auto;
+                position:absolute;
+                left:45%;
+                top:35%;
+                padding:2px;
+                z-index:20001;
+            }
+            #loading a {
+                color:#225588;
+            }
+            #loading .loading-indicator{
+                background:white;
+                color:#444;
+                font:bold 13px Helvetica, Arial, sans-serif;
+                height:auto;
+                margin:0;
+                padding:10px;
+            }
+            #loading-msg {
+                font-size: 10px;
+                font-weight: normal;
+            }
+
+            /* Preview classes */
+            .articlepreview .x-toolbar {
+                border-top-width: 1px !important;
+            }
+
+            .preview .x-panel-body {
+                background:#fff;
+                color:#222;
+                font:normal 12px tahoma,verdana,arial,sans-serif;
+            }
+
+            .preview .x-panel-body p {
+                line-height:18px;
+                margin:8px 0;
+            }
+
+            .preview .x-panel-body ul {
+                margin-left:18px;
+            }
+
+            .preview .x-panel-body ul li {
+                display:list-item;
+                list-style-image:none !important;
+                list-style-position:outside !important;
+                list-style-type:disc !important;
+                margin-left:18px;
+            }
+
+            .preview .x-panel-body pre, #preview .x-panel-body code {
+                background:#f1f1f1;
+                display:block;
+            }
+
+            .preview .x-panel-body h4.post-author {
+                font-weight:normal;
+                color:#555;
+                font-size:11px;
+            }
+            .preview .x-panel-body span.post-date {
+                font-weight:normal;
+                color:#555;
+                float:right;
+                font-size:11px;
+            }
+            .preview .x-panel-body div.post-data {
+                background:#f1f2f4;
+                padding:5px;
+                border-bottom:1px solid #dadadb;
+            }
+            .preview .x-panel-body div.post-body {
+                padding:10px;
+            }
+        </style>
+</head>
+<body>
+
+    <div id="loading-mask" style=""></div>
+    <div id="loading">
+        <div class="loading-indicator" align="center">
+            <img src="images/loading.gif" style="margin-right:8px;float:left;vertical-align:top;"/>
+            <br /><span id="loading-msg">Loading styles and images...</span>
+        </div>
+    </div>
+
+    <div id="viewport">
+
+    <div id="bd">
+        <div class="left-column">
+            <div id="sample-spacer" style="height:400px;"></div>
+
+            <link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext-4.1.1-gpl/resources/css/ext-all.css" />
+            <link rel="stylesheet" type="text/css" href="css/komponen.css" />
+            <link rel="stylesheet" type="text/css" href="css/desktop.css" />
+            <link rel="stylesheet" type="text/css" href="css/BoxSelect.css" />
+            <link rel="stylesheet" type="text/css" href="css/statusbar.css" />
+            <link rel="stylesheet" type="text/css" href="css/menusetting.css" />
+            <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+            <link rel="stylesheet" type="text/css" href="css/examples.css" />
+            <link rel="stylesheet" type="text/css" href="css/menuutama.css" />
+            <link rel="stylesheet" type="text/css" href="css/layout-browser.css" />
+
+            <script type="text/javascript">document.getElementById('loading-msg').innerHTML = 'Loading Core API...';</script>
+
+            <script type="text/javascript" src="http://cdn.sencha.com/ext-4.1.1-gpl/ext-all-dev.js"></script>
+            <script type="text/javascript">document.getElementById('loading-msg').innerHTML = 'Loading UI Components...';</script>
+            <script type="text/javascript">document.getElementById('loading-msg').innerHTML = 'Initializing...';</script>
+
+            <!-- App.js contains Ext.App, a simple, re-usable Application component -->
+            <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

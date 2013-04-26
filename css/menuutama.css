@@ -1,0 +1,17 @@
+/* PARENT */
+.menu-master {
+    background-image: url(../images/databases.png) !important;
+}
+
+.menu-monev {
+    background-image: url(../images/clipboard_text.png) !important;
+}
+
+.menu-laporan {
+    background-image: url(../images/books.png) !important;
+}
+
+.menu-pengaturan {
+    background-image: url(../images/setting.png) !important;
+}
+

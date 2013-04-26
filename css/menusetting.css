@@ -1,0 +1,32 @@
+.setting-list {
+    padding: 0 3px 0 3px;
+}
+
+.setting-list-item {
+    margin-top: 3px;
+    font-size: 11px;
+    line-height: 20px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.setting-list .x-item-selected {
+    font-weight: bold;
+    color: #15428B;
+    background-color: #DFE8F6;
+    border: 1px dotted #A3BAE9;
+}
+
+.setting-list-item-hover {
+    background-color: #eee;
+}
+
+.setting-list-item-gantipassword {
+    padding-left: 20px;
+    background: url(../images/edit.png) no-repeat 0 2px;
+}
+
+.setting-list-item-logout {
+    padding-left: 20px;
+    background: url(../images/door_out.png) no-repeat 0 2px;
+}
